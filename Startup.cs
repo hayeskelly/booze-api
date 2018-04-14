@@ -25,7 +25,7 @@ namespace BuckIBooze.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<LiquorStoreContext>(opt => opt.UseInMemoryDatabase("Products"));
+            services.AddDbContext<LiquorStoreContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("LiquorStoreConnection")));
             services.AddMvc();
             services.AddLogging();
             services.AddCors(options =>
