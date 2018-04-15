@@ -18,3 +18,13 @@ C:/Users/Mason/BuckIBooze.API/obj/Debug/netcoreapp2.0/BuckIBooze.API.pdb
 /Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API/obj/Debug/netcoreapp2.0/BuckIBooze.API.AssemblyInfo.cs
 /Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API/obj/Debug/netcoreapp2.0/BuckIBooze.API.dll
 /Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API/obj/Debug/netcoreapp2.0/BuckIBooze.API.pdb
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/bin/Debug/netcoreapp2.0/BuckIBooze.API.deps.json
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/bin/Debug/netcoreapp2.0/BuckIBooze.API.runtimeconfig.json
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/bin/Debug/netcoreapp2.0/BuckIBooze.API.runtimeconfig.dev.json
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/bin/Debug/netcoreapp2.0/BuckIBooze.API.dll
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/bin/Debug/netcoreapp2.0/BuckIBooze.API.pdb
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/obj/Debug/netcoreapp2.0/BuckIBooze.API.csproj.CoreCompileInputs.cache
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/obj/Debug/netcoreapp2.0/BuckIBooze.API.AssemblyInfoInputs.cache
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/obj/Debug/netcoreapp2.0/BuckIBooze.API.AssemblyInfo.cs
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/obj/Debug/netcoreapp2.0/BuckIBooze.API.dll
+/Users/mac/Documents/SP 18/ACCTMIS 3610/Labs/Buck-I-Booze.API-OLD/obj/Debug/netcoreapp2.0/BuckIBooze.API.pdb

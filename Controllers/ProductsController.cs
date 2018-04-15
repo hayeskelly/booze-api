@@ -17,35 +17,49 @@ namespace BuckIBooze.API.Controllers
 
             if (this.db.Products.Count() == 0)
             {
-                this.db.Products.Add(new Product {
-                    Id = 1,
-                    name = "Tito's",
-                    price = 15,
-                    size = "bottle",
-                    type = "Vodka",
-                    imgName = "Titos",
-                    imgURL = "https://www.haskells.com/media/catalog/product/cache/1/image/816x1200/040ec09b1e35df139433887a97daa66f/1/0/102060_0_1_1.jpg"
-                });
-
-                this.db.Products.Add(new Product 
-                {
-                    Id = 2,
-                    name = "Jack Daniel's",
-                    price = 17,
-                    size = "bottle",
-                    type = "Whiskey",
-                    imgName = "Jack",
-                    imgURL = "https://drizly-products1.imgix.net/ci-jack-daniels-old-no-7-eb589ada0c4a8027.jpeg?auto=format%2Ccompress&fm=jpeg&q=20"
-                });
-
-                this.db.SaveChanges();
+                //handle this
             }
         }
         
+        [HttpGet("beer", Name="GetBeer")]
+        public List<string> GetBeer(string sup)
+        {
+            sup = "Beer";
+            var mytypes = db.Products.Where(prod => prod.supertype == sup).Select(sub => sub.subtype).Distinct();
+            List<string> types = mytypes.ToList();
+            return types;
+        }
+
+        [HttpGet("wine", Name="GetWine")]
+        public List<string> GetWine(string sup)
+        {
+            sup = "Wine";
+            var mytypes = db.Products.Where(prod => prod.supertype == sup).Select(sub => sub.subtype).Distinct();
+            List<string> types = mytypes.ToList();
+            return types;
+        }
+
+        [HttpGet("liquor", Name="GetLiquor")]
+        public List<string> GetLiquor(string sup)
+        {
+            sup = "Liquor";
+            var mytypes = db.Products.Where(prod => prod.supertype == sup).Select(sub => sub.subtype).Distinct();
+            List<string> types = mytypes.ToList();
+            return types;
+        }
+        
         [HttpGet]
+        public List<string> GetTypes()
+        {
+            var mytypes = db.Products.Select(type => type.supertype).Distinct();
+            List<string> types = mytypes.ToList();
+            return types;
+        }
+        
+        [HttpGet("all", Name="GetAll")]
         public IActionResult GetAll()
         {
-            return Ok(db.Products);
+           return Ok(db.Products);
         }
 
         [HttpGet("{id}", Name="GetProduct")]
@@ -89,7 +103,6 @@ namespace BuckIBooze.API.Controllers
                 return NotFound();
             }
 
-
             this.db.Products.Update(currentProduct);
             this.db.SaveChanges();
 
@@ -106,7 +119,6 @@ namespace BuckIBooze.API.Controllers
                 return NotFound();
             }
 
-        
             this.db.Products.Remove(product);
             this.db.SaveChanges();
 
